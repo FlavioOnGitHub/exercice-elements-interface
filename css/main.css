@@ -1,13 +1,6 @@
-/* ====================================
-// css variables
-// ==================================== */
-
 :root {
+  --button-width: 30px;
 }
-
-/* ====================================
-// reset rules
-// ==================================== */
 
 * {
   box-sizing: border-box;
@@ -23,13 +16,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-a {
-  color: inherit;
+  width: 320px;
+  margin: auto;
 }
 
 img,
@@ -39,6 +27,140 @@ video {
   vertical-align: text-top;
 }
 
-/* ====================================
-// base rules
-// ==================================== */
+ul {
+  list-style: none;
+  border-top: 1px rgba(58, 90, 247, 0.5) solid;
+}
+
+li {
+  border-bottom: 1px rgba(58, 90, 247, 0.5) solid;
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+}
+
+nav {
+  padding: 31px 16px;
+  background: #1c1c1c;
+  box-shadow: 0px 2px 4px 0px rgba(28, 28, 28, 0.5);
+  font-family: "Roboto";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+main {
+  background-color: rgba(225, 231, 246, 1);
+  padding: 54px 16px 78px;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 32px;
+  align-items: flex-start;
+  margin-bottom: 68px;
+}
+
+.button {
+  display: inline-block;
+}
+
+.rectangle-button {
+  border-radius: 8px;
+  background-color: #3a5af7;
+  filter: drop-shadow(0px 2px 4px rgba(58, 90, 247, 0.5));
+  padding: 12px 32px;
+  color: #eaeaea;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.rounded-button {
+  border-radius: 24px;
+  background: #3a5af7;
+  box-shadow: 0px 2px 4px 0px rgba(58, 90, 247, 0.5);
+  padding: 12px 32px;
+  color: #eaeaea;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 1px;
+}
+
+.add-button {
+  background-color: white;
+  padding: 6px 15px;
+  border-radius: 50%;
+  color: #3a5af7;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.5px;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.card {
+  display: block;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.card img {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.card-text {
+  color: #1e1e1e;
+  font-family: "Roboto";
+  padding: 16px 16px 24px;
+}
+
+h2 {
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-bottom: 4px;
+}
+
+h3 {
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  margin-bottom: 15px;
+}
+
+.card-text p {
+  color: #1e1e1e;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.9px;
+}
